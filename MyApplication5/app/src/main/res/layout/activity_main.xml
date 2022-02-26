@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giải phương trình bậc 2"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#D31C1C"
+        android:textStyle="bold"
+        android:id="@+id/content"
+        android:layout_marginTop="20dp"
+        ></TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/nhapso"
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số a"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/so_a"
+            ></EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số b"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/so_b"
+            android:layout_below="@+id/so_a"
+            android:layout_marginTop="20dp"
+            ></EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số c"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/so_c"
+            android:layout_below="@+id/so_b"
+            android:layout_marginTop="20dp"
+
+            ></EditText>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tính"
+        android:layout_below="@+id/nhapso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tinh"
+        >
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xoá"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tinh"
+        android:id="@+id/xoa"
+        ></Button>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xoa"
+        >
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Giá trị 1"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sothunhat"
+            ></TextView>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Giá trị 1"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sothuhai"
+            ></TextView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
