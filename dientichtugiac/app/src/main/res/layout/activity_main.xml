@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:rotationX="19"
+        android:rotationY="3"
+        android:shadowDx="5"
+        android:clickable="false"
+        android:text="Tính diện tích, chu vi hình tam giac"
+        android:textColor="#D11212"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:layout_below="@+id/content"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/point1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/labelA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toạ độ đỉnh A : "
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/XA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/labelA"
+                android:hint="giá trị X"
+                android:inputType="number|numberSigned|numberDecimal"></EditText>
+
+            <EditText
+                android:id="@+id/YA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XA"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/labelA"
+                android:hint="giá trị Y"
+                android:inputType="number|numberSigned|numberDecimal"></EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/point1"
+            android:id="@+id/point2"
+            android:layout_marginTop="25dp"
+            >
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/labelB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toạ độ đỉnh B : "></TextView>
+
+            <EditText
+                android:id="@+id/XB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/labelB"
+                android:hint="giá trị X"
+                android:inputType="number|numberSigned|numberDecimal"></EditText>
+
+            <EditText
+                android:id="@+id/YB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XB"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/labelB"
+                android:hint="giá trị Y"
+                android:inputType="number|numberSigned|numberDecimal"></EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/point2"
+            android:id="@+id/point3"
+            android:layout_marginTop="25dp"
+            >
+
+            <TextView
+                android:id="@+id/labelC"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toạ độ đỉnh C : "></TextView>
+
+            <EditText
+                android:id="@+id/XC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/labelC"
+                android:hint="giá trị X"
+                android:inputType="number|numberSigned|numberDecimal"></EditText>
+
+            <EditText
+                android:id="@+id/YC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XC"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/labelC"
+                android:hint="giá trị Y"
+                android:inputType="number|numberSigned|numberDecimal"></EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/point4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/point3"
+
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/labelD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toạ độ đỉnh D : "
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/XD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/labelD"
+                android:hint="giá trị X"
+                android:inputType="number|numberSigned|numberDecimal"></EditText>
+
+            <EditText
+                android:id="@+id/YD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/XD"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/labelD"
+                android:hint="giá trị Y"
+                android:inputType="number|numberSigned|numberDecimal"></EditText>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+
+        android:text="calculate"></Button>
+
+    <LinearLayout
+        android:id="@+id/ressult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cal"
+                android:text="Chu vi"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/display2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cal"
+                android:layout_marginTop="20dp"
+                android:text="Diện tích"
+                android:textSize="20sp"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/chuvi"
+
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="result"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/dientich"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="result"
+                android:textSize="20sp"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ressult"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:id="@+id/error"
+        android:textColor="#F30606"
+        ></TextView>
+
+</RelativeLayout>
